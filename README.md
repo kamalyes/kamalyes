@@ -67,6 +67,45 @@
 ### 📊 WakaTime
   
 <!--START_SECTION:waka-->
+**I'm a Night 🦉** 
+
+```text
+🌞 Morning                185 commits         █████░░░░░░░░░░░░░░░░░░░░   21.46 % 
+🌆 Daytime                51 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.92 % 
+🌃 Evening                257 commits         ███████░░░░░░░░░░░░░░░░░░   29.81 % 
+🌙 Night                  369 commits         ███████████░░░░░░░░░░░░░░   42.81 % 
+```
+📅 **I'm Most Productive on Monday** 
+
+```text
+Monday                   144 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.71 % 
+Tuesday                  129 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.97 % 
+Wednesday                128 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.85 % 
+Thursday                 140 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.24 % 
+Friday                   131 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.20 % 
+Saturday                 110 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.76 % 
+Sunday                   80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.28 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: America/Los_Angeles
+
+💬 Programming Languages: 
+YAML                     50 mins             ███████████████████░░░░░░   77.24 % 
+Markdown                 14 mins             ██████░░░░░░░░░░░░░░░░░░░   22.76 % 
+
+🔥 Editors: 
+VS Code                  1 hr 4 mins         █████████████████████████   100.00 % 
+
+💻 Operating System: 
+Windows                  1 hr 4 mins         █████████████████████████   100.00 % 
+```
+
+
+ Last Updated on 17/05/2023 09:15:22 UTC
 <!--END_SECTION:waka-->
   
 </td></tr>
