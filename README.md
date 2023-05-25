@@ -154,9 +154,6 @@ Windows                  42 hrs 46 mins      ███████████�
 
 <!-- just img 图片 -->
 <img src="https://cdn.jsdelivr.net/gh/kamalyes/kamalyes/assets/images/icon.png" /></div>
-
-<!-- profile-3d-contrib 3D贡献图-->
-<img src="https://cdn.jsdelivr.net/gh/kamalyes/kamalyes/profile-3d-contrib/profile-night-rainbow.svg" />
 </div>
 
 <!-- ########################################## 分割 ########################################## -->
