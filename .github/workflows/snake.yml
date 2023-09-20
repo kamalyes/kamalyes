@@ -1,0 +1,32 @@
+name: 🐍 Snake Contrib
+
+on:
+  # push:
+  #   branches: [master]
+  schedule:
+    - cron: "0 9 * * *"  # ⏰ 每天上午9点定时运行
+  workflow_dispatch:  # 🚀 手动触发工作流
+  
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: 🐍 生成 github 贡献图（github-contribution-grid-snake.svg）
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/profile-snake-contrib/github-contribution-grid-snake.svg
+            dist/profile-snake-contrib/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            
+      - name: 🚀 推送生成的贡献图到 master 分支
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: master
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}

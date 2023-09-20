@@ -1,0 +1,279 @@
+name: GitHub Metrics 📊✨
+
+on:
+  # push:
+  #   branches: [master]
+  schedule:
+    - cron: "0 9 * * *"
+    # https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # 基础信息（顺带了几个小插件）
+      - name: 基础信息 & 插件 🧰
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/base.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: kamalyes
+          template: classic
+          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories, metadata
+          plugin_traffic: yes      # 🧮 Repositories traffic
+          plugin_lines: yes        # 👨‍💻 Lines of code changed
+          plugin_introduction: yes # 🙋 Introduction
+          plugin_gists: yes        # 🎫 Gists
+          plugin_starlists: yes    # 💫 Star lists
+          plugin_starlists_limit_repositories: 2
+          plugin_starlists_languages: yes
+          plugin_starlists_limit_languages: 8
+          plugin_starlists_only: Awesome
+
+      # ✨ Stargazers
+      - name: 星标趋势图 📈
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/stargazers.chartist.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+          plugin_stargazers_charts_type: chartist
+
+      # 📌 Starred topics
+      - name: 标签图标 🏷️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/topics.icons.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
+
+      # 🌟 最近星标库
+      - name: 最近加星 🌟
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/stars.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stars: yes
+          plugin_stars_limit: 3
+
+      # 💡 近期活跃度图表
+      - name: 活跃度统计 📊
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/habits.charts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          config_timezone: Europe/Paris
+
+      # 🎟️ Issues 和 PR 跟进
+      - name: 议题跟进 🔍
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/followup.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+
+      # 🎭 评论反应统计
+      - name: 评论反应 ❤️‍🔥
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/reactions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_reactions: yes
+          plugin_reactions_limit: 100
+          plugin_reactions_details: percentage
+
+      # 🧑‍🤝‍🧑 关注者统计
+      - name: 粉丝与关注者 👥
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/people.followers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_limit: 500
+          plugin_people_size: 36
+          plugin_people_types: followers, following
+
+      # 📓 置顶仓库
+      - name: 置顶仓库 📌
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/repositories.pinned.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_pinned: 2
+
+      # 💬 GitHub 讨论
+      - name: 讨论分类 💬
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/discussions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_discussions: yes
+          plugin_discussions_categories_limit: 8
+
+      # 📆 提交历史日历
+      - name: 提交日历 📅
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/calendar.full.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
+
+      # 🏆 成就展示
+      - name: 成就概览 🏅
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/achievements.compact.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+
+      # 📰 最新动态
+      - name: 最新活动动态 📰
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+
+      # ♐ 每日代码片段
+      - name: 今日代码片段 ✒️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/code.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_code: yes
+          plugin_code_languages: javascript, typescript
+          plugin_code_load: 400
+
+      # 🗂️ GitHub 项目
+      - name: 项目展示 🗂️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/projects.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_projects: yes
+          plugin_projects_repositories: lowlighter/metrics/projects/1
+          plugin_projects_descriptions: yes
+
+      # 🌇 GitHub 天际线
+      - name: 天际线动画 🌇
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/skyline.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_skyline: yes
+          plugin_skyline_year: 2023
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
+
+      # 🗨️ Stack Overflow 热门回答
+      - name: Stack Overflow 热门回答 🗨️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/stackoverflow.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 1
+          plugin_stackoverflow_sections: answers-top
+          plugin_stackoverflow_limit: 2
+
+      # 🌸 Anilist 收藏角色
+      - name: 收藏角色 🌸
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/anilist.characters.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_sections: characters
+          plugin_anilist_limit_characters: 22
+
+      # 🎼 Spotify 播放列表随机曲目
+      - name: Spotify 随机曲目 🎼
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/music.playlist.spotify.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_music: yes
+          plugin_music_playlist: https://open.spotify.com/embed/playlist/3nfA87oeJw4LFVcUDjRcqi
+
+      # ✒️ 最新文章
+      - name: 最新文章 ✒️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/posts.full.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_posts: yes
+          plugin_posts_source: dev.to
+          plugin_posts_limit: 2
+          plugin_posts_descriptions: yes
+          plugin_posts_covers: yes
+
+      # 🗼 HackerNews 新闻源
+      - name: HackerNews 新闻 🗼
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/rss.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_rss: yes
+          plugin_rss_source: https://news.ycombinator.com/rss
+          plugin_rss_limit: 4
+
+      # ⏰ WakaTime 时间统计
+      - name: WakaTime 时间统计 ⏰
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/wakatime.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+
+      # 🗳️ LeetCode 统计
+      - name: LeetCode 题目统计 🗳️
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/leetcode.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
