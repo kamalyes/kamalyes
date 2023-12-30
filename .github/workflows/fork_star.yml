@@ -1,0 +1,18 @@
+name: ⭐ 更新 Fork Star 信息
+
+on:
+  # push:
+  #   branches: [master]    # 🛠 代码推送到 master 分支时触发
+  schedule:
+    - cron: "0 9 * * *"  # ⏰ 每天上午9点定时触发
+  workflow_dispatch:      # 🚀 手动触发工作流
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⭐ 显示仓库星标和 Fork 数量
+        uses: ouuan/This-repo-has-x-stars-y-forks-action@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          template: "kamalyes's profile with <starCount> stars ⭐ and <forkCount> forks 🍴 🎉"
