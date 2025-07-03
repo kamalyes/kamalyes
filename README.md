@@ -72,44 +72,48 @@
 ### 📊 WakaTime
   
 <!--START_SECTION:waka-->
-**I'm a Night 🦉** 
+**I'm an Early 🐤** 
 
 ```text
-🌞 Morning                315 commits         █████░░░░░░░░░░░░░░░░░░░░   21.97 % 
-🌆 Daytime                72 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   05.02 % 
-🌃 Evening                420 commits         ███████░░░░░░░░░░░░░░░░░░   29.29 % 
-🌙 Night                  627 commits         ███████████░░░░░░░░░░░░░░   43.72 % 
+🌞 Morning                488 commits         ██████░░░░░░░░░░░░░░░░░░░   22.70 % 
+🌆 Daytime                779 commits         █████████░░░░░░░░░░░░░░░░   36.23 % 
+🌃 Evening                739 commits         █████████░░░░░░░░░░░░░░░░   34.37 % 
+🌙 Night                  144 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.70 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   247 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.22 % 
-Tuesday                  219 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.27 % 
-Wednesday                232 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.18 % 
-Thursday                 251 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.50 % 
-Friday                   205 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.30 % 
-Saturday                 155 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.81 % 
-Sunday                   125 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.72 % 
+Monday                   281 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.07 % 
+Tuesday                  305 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.19 % 
+Wednesday                356 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.56 % 
+Thursday                 385 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.91 % 
+Friday                   335 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
+Saturday                 196 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.12 % 
+Sunday                   292 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.58 % 
 ```
 
 
 📊 **This Week I Spent My Time On** 
 
 ```text
-🕑︎ Time Zone: America/Los_Angeles
+🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Vue.js                   14 hrs 57 mins      ██████████░░░░░░░░░░░░░░░   39.53 % 
+TypeScript               12 hrs 51 mins      ████████░░░░░░░░░░░░░░░░░   34.00 % 
+Markdown                 3 hrs 24 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   09.01 % 
+Go                       2 hrs 6 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.58 % 
+JSON                     1 hr 34 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.17 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  37 hrs 50 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  37 hrs 50 mins      █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 30/12/2023 09:13:15 UTC
+ Last Updated on 03/07/2025 09:21:46 UTC
 <!--END_SECTION:waka-->
   
 </td></tr>
