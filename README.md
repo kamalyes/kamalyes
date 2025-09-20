@@ -19,7 +19,7 @@
   </div>
 
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
-  <img src="https://cdn.jsdelivr.net/gh/kamalyes/kamalyes/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/kamalyes/kamalyes/profile-snake-contrib/github-contribution-grid-snake.svg" />
 
 </div>
 
@@ -32,30 +32,52 @@
 ### 🤺 About Me
 
 - 🔭 I’m currently working on [pika](https://github.com/kamalyes/pika).
-- 🌱 I’m currently learning redux.
-- 👯 I’m looking to collaborate on flutter related open source project.
+- 🌱 I’m currently learning llm.
+- 👯 I’m looking to collaborate on go or react related open source project.
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about yyq501893067
 - 📫 How to reach me: mryu168@163.com
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-
-</td>
-</tr>
-
-<tr>
-<td>
   
 ### 🏢 Work Experience
-- 工作内容：主导或参与前后端（Vue+Golang）系统设计、研发、CI/CD等相关工作；研发基础服务组件，解决共性需求，减少重复开发与运维
-- [智颜未来（深圳）信息技术有限公司]() &emsp; 📌 2023-07 —— 至今
+- [智颜未来（深圳）信息技术有限公司]() &emsp; 📌 2023-07 —— 2025.10
 - [新瑞鹏医疗集团]() &emsp; 📌 2021-04 —— 2023-06-30
 - [腾讯PCG互动视频]() &emsp; 📌 2019-03 —— 2021-04
 
-</td>
-</tr>
+### 💼 技能总结
+1. **掌握 Go 标准库**：灵活运用 `Goroutines` 和 `Channels`、`Mutex` 进行并发编程
+2. **熟练使用微服务框架**：快速搭建高性能 Web 应用，整合`原生SQL` 或 `ORM` 实现高效数据访问
+3. **精通 MySQL 数据库设计**：具备丰富的数据库设计经验，编写高性能 SQL
+4. **掌握 Redis 与消息队列**：利用 `Redis` 提升系统性能，使用 `RabbitMQ` 等消息队列技术保障高并发环境下的消息传递，确保系统的高可用性和可靠性
+5. **精通持续集成与部署（CI/CD）**：结合 `Jenkins`、`GitLab`、`Docker` 实现持续集成与交付，显著提高开发效率与交付质量，缩短产品上线周期
+6. **云计算与容器化技术**：结合 `Kubernetes（K8s）`、`Istio`、`Ingress-Nginx` 部署可扩展的云原生应用，利用容器化技术提升应用的可移植性与弹性，优化资源使用
+7. **具备前端开发能力**：熟悉 `Vue.js` 框架，结合 `Vant/ElementPlus` 快速实现 `CRUD` 交互
+8. **自动化测试与性能监控**：搭建自动化测试框架，性能测试平台进行系统评估优化
+9. **缺陷管理与版本控制**：熟练使用 `Tapd`、`Git` 等工具，高效管理项目进度、版本控制和缺陷跟踪，推动团队协作与项目透明度，确保项目按时交付
+10. **智能化解决方案与自动化生成**：熟练运用 `GPT` 等先进的自然语言处理技术，快速生成高质量的技术文档、代码片段及业务逻辑，提升团队的工作效率与创新能力
+11. **跨团队协作**：具备良好的沟通与协作能力，协调各方资源
 
-<tr><td>
+<p align="center">
+  <a href="https://github.com/kamalyes">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamalyes&theme=radical&border=7F3FBF&background=0D1117" alt="Kamalyes GitHub streak"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kamalyes">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kamalyes&theme=radical" alt="Kamalyes GitHub Contribution"/>
+  </a>
+</p>
+
+<a> 
+    <a href="https://github.com/kamalyes"><img alt="Kamalyes Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=kamalyes&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <a href="https://github.com/kamalyes"><img alt="Kamalyes Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=kamalyes&langs_count=8&layout=compact&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
+  <br/>
+</a>
+
+
+![Kamalyes Graph](https://github-readme-activity-graph.vercel.app/graph?username=kamalyes&custom_title=Kamalyes%20GitHub%20Activity%20Graph&bg_color=0D1117&color=7F3FBF&line=7F3FBF&point=7F3FBF&area_color=FFFFFF&title_color=FFFFFF&area=true)
 
 <!-- wakatime 统计 -->
 ### 📊 WakaTime
@@ -117,7 +139,7 @@ No Activity Tracked This Week
 ![Windows Badge](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=fff&style=flat)
 
 <!-- programming tool icon 编程工具图标 -->
-<img src="https://skillicons.dev/icons?i=ps,ai,pr,c,cpp,cs,ts,discord,twitter,mongodb,instagram,idea,git" /><br>
+<img src="https://skillicons.dev/icons?i=ps,ai,pr,go,ts,discord,twitter,mongodb,instagram,idea,git" /><br>
 
 <!-- svg -->
 <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="icon" width="65" style="width: 65px; height: 65px; margin-right: 50px; margin-bottom: 0px;" />
